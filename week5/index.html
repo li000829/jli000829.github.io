@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Monya's Coffee Shop - Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -15,21 +16,21 @@
         <h1>Monya's Coffee Shop</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="Contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- Adding an on page link -->
-        <a href="#treatoftheweek">Treat of the week</a>
+        <a href="#treatoftheweek" class="blue-link">Treat of the week</a>
         <article>
             <h2>Our Story</h2>
             <img src="./images/coffee-shop.jpg" alt="coffee cup on a pile of coffee beans" title="Coffee cup on a pile of coffee beans">
             <p>
                 We are a <em>family own business</em>. Monya is the <abbr title="Chief Executive Officeer">CEO</abbr> and head barista of the shop. Maria is the pastry chef and is in charge of the bake shop. Celebrating their 10 <sup>th</sup> anniversary together in March 2024.
             </p>
-            <blockquote>
+            <blockquote class="large-text">
                 We love Coffee! <cite> -Monya and Maria</cite>
             </blockquote>
             <hr>
@@ -59,8 +60,8 @@
         </section>
         <!-- Adding a section for a description list -->
         <section id="treatoftheweek">
-            <h3>Treat of the Week</h3>
-            <dl>
+            <h3 class="white-text">Treat of the Week</h3>
+            <dl class="white-text">
                 <dt>Name</dt>
                 <dd>Banana Bread</dd>
 
@@ -87,7 +88,7 @@
         <!-- Adding section for Menu Table -->
         <section>
             <h3>Menu Specials</h3>
-            <table border>
+            <table>
                 <thead>
                     <tr>
                         <th colspan="2">Items</th>
@@ -115,7 +116,7 @@
         </section>
     </main>
     <!-- Site Footer -->
-    <footer>
+    <footer class="site-footer">
         <!-- Special symbols for HTML can be found by googling HTML entities -->
         Copyright &copy; Monya's Coffee Shop, 2023
     </footer>
