@@ -36,6 +36,7 @@ h1{
   
 .lonestarfishwide{
     background-size: contain;
+    margin:0 auto;
 }
   
 nav ul .current .border,
