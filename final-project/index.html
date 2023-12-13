@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Three Star Media</title>
     <!-- Font link styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Ephesis&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    <!--Icon Link Styles-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon link styles  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--Custom Style sheet-->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
-</head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
 
 <body>
     <div class="container">
-        <header class="masthead">
+        <header>
 
             <!---Add navagation bar -->
             <div class="navbar">
-                <div class="logocontainer">
+                <div class="starlogo">
                     <img src="images/logo.png" alt="Three Star Logo" class="logo">
                 </div>            
                 
@@ -35,29 +36,29 @@
                     </ul>
                 </nav>
 
-                <form action="/search" method="get">
+                <form action="search" class="query">
                     <input type="text" id="search" name="search" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
             </div>
+        </header>
 
-            <div class="welcomehead">
-                <img src="images/main-banner.jpg" alt="welcome">
-                <div class="welcome">
+        <main>
+            <div class="headtitle">
+                <div class="welcome">                
                     <h1>Welcome to Three Star Media</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero eveniet earum officiis aliquid sint nostrum tempore? Asperiores laboriosam, praesentium ipsam beatae nulla deleniti unde amet, enim assumenda porro ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="welcomecontent">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero eveniet earum officiis aliquid sint nostrum tempore? Asperiores laboriosam, praesentium ipsam beatae nulla deleniti unde amet
                     </p>
                     <a href="#" class="contactwithus">Connect with Us &#9654;</a>
                 </div>
             </div>
-        </header>
 
-        <main class="content">
             <section class="aboutus">
                 <div>
                     <img src="images/about-us.jpg" alt="About-us" class="aboutusjpg">
                 </div>
+                
                 <div class="aboutus-content">
                     <h2>About Us</h2>
                     <p>
@@ -69,70 +70,78 @@
                 </div>
             </section>
             
-            <section id="ourservices">
-                <!--Add cards into total five div-->
-                <div class="cards">
-                    <h2>Our Services</h2>
-                    <section class="card">                   
-                        <img src="images/digital.jpg" alt="Digital">
-                        <div class="info">
-                            <h3>Digital Transformation</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
-                            </p>
-                            <a href="#" class="digitalplans">Digital Plans &#9654;</a>
-                        </div>
-                    </section>                
+            <section class="ourservices">
+                <!--Add total five div into cards-->
                 
-                    <section class="card">
-                        <img src="images/marketing.jpg" alt="Marketing">
-                        <div class="info">
-                            <h3>Marketing</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
-                            </p>
-                            <a href="#" class="marketing">Marketing Plans &#9654;</a>
-                        </div>
-                    </section>
+                <h2>Our Services</h2>
+                    
+                <div class="cardone">
+                    <img src="images/digital.jpg" alt="Digital" class="digital">
 
-                    <section class="card">
-                        <img src="images/video.jpg" alt="Video">
-                        <div class="info">
-                            <h3>Video Production</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
-                            </p>
-                            <a href="#" class="videoplans">Video Plans &#9654;</a>
-                        </div>
-                    </section>
+                    <div class="info">
+                        <h3>Digital Transformation</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="digitalplans">Digital Plans &#9654;</a>
+                    </div>
+                </div>                
+                
+                <div class="cardtwo">
+                    <img src="images/marketing.jpg" alt="Marketing" class="marketing">
 
-                    <section class="card">
-                        <img src="images/web.jpg" alt="Web">
-                        <div class="info">
-                            <h3>Web Development</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
-                            </p>
-                            <a href="#" class="webplans">Web Plans &#9654;</a>
-                        </div>
-                    </section>
-
-                    <section class="card">
-                        <img src="images/print.jpg" alt="Print">
-                        <div class="info">
-                            <h3>Print</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
-                            </p>
-                            <a href="#" class="printplan">Print Plans &#9654;</a>
-                        </div>
-                    </section>
+                    <div class="info">
+                        <h3>Marketing</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="marketing">Marketing Plans &#9654;</a>
+                    </div>
                 </div>
+
+                <div class="cardthree">
+                    <img src="images/video.jpg" alt="Video" class="video">
+
+                    <div class="info">
+                        <h3>Video Production</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="videoplans">Video Plans &#9654;</a>
+                    </div>
+                </div>
+
+                <div class="cardfour">
+                    <img src="images/web.jpg" alt="Web" class="web">
+
+                    <div class="info">
+                        <h3>Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="webplans">Web Plans &#9654;</a>
+                    </div>
+                </div>
+
+                <div class="cardfive">
+                    <img src="images/print.jpg" alt="Print" class="print">
+
+                    <div class="info">
+                        <h3>Print</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur neque officiis minima, pariatur autem dicta ipsum placeat harum. Saepe animi qui quam dignissimos veniam similique modi. Quae quam iste voluptates!
+                        </p>
+                        <a href="#" class="printplan">Print Plans &#9654;</a>
+                    </div>
+                </div>
+            </section>
             <!-- Close the cards-->
             
             <!-- Add section into Vision -->
+            <!-- Add div into Vision -->
             <section class="ourvision">
                 <img src="images/vision.jpg" alt="Vision" class="vision">
+
                 <div class="visioncontent">
                     <h3>Our Vision</h3>
                         <p>
@@ -143,66 +152,71 @@
             </section>
 
             <!-- Add section into ourteam -->
-            <!-- Add div into team -->
-            <section id="team1" class="ourteam">
+            <!-- Add div into ourteam -->
+            <section class="ourteam">
                 <h2>Our Team</h2>
                 
-                <div class="johnjpg">
-                    <img src="images/john.jpg" alt="john">
-                </div>
-                <div class="johndoe">
-                    <section class="team">
+                <div class="john">
+                    <div>
+                        <img src="images/john.jpg" alt="john" class="johnjpg">
+                    </div>
+
+                    <div class="johndoe">
                         <h3>John Doe</h3>
-                        <h5>CEO and Co-owner</h5>
-                        <p>
+                        <h4>CEO and Co-owner</h4>
+                        <p class="intro">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur rem, error debitis reprehenderit harum fugiat unde necessitatibus esse adipisci autem cupiditate iusto neque dolorem natus rerum corporis quis officia.
                         </p>
-                    </section>
-                </div>            
+                    </div>
+                </div>           
 
-                <div class="bobjpg">
-                    <img src="images/bob.jpg" alt="bob">
-                    <section class="team">
+                <div class="bob">
+                    <div>
+                        <img src="images/bob.jpg" alt="bob" class="bobjpg">
+                    </div>
+
+                    <div class="bobrite">
                         <h3>Bob Rite</h3>
-                        <h5>CFO and Co-owner</h5>        
-                        <p>
+                        <h4>CFO and Co-owner</h4>        
+                        <p class="intro">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur rem, error debitis reprehenderit harum fugiat unde necessitatibus esse adipisci autem cupiditate iusto neque dolorem natus rerum corporis quis officia.
                         </p>
-                    </section>
+                    </div>
                 </div>
             </section>
 
             <!-- Add section into contact us -->
-            <section id="contactus">
+            <!-- Add div into contact us -->
+            <section class="contactus">
                 <h2>Contact Us</h2>
                 <div class="message">
                     <form method="post">
-                        <h4>Send us a message</h4>
+                        <h3>Send us a message</h3>
 
-                            <div>
+                            <div class="name">
                                 <label for="fullname">Full Name</label>
                                 <br>
                                 <input type="text" id="fullname" name="fullname" required>
                                 <br>
                             </div>
-                            <div>
+                            <div class="email">
                                 <label for="youremail">Email</label>
                                 <br>
                                 <input type="text" id="email" name="youremail" required>
                                 <br>
                             </div>
-                            <div>
+                            <div class="message">
                                 <label for="yourmessage">Message</label>
                                 <br>
                                 <textarea name="message" id="yourmessage"></textarea>
                                 <br>
                             </div>
-                            <button type="button">SEND</button>
+                            <button type="submit" class="button">SEND</button>
                     </form>
                 </div>
 
-                <div class="operation">
-                    <h4>Hours of Operation</h4>
+                <div class="openhour">
+                    <h3>Hours of Operation</h3>
                     <table>
                         <thead>
                             <th>Day</th>
@@ -228,7 +242,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9571798030734!2d-75.75811153806613!3d45.34967664095181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1701216419719!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>               
                     </div>
                 </div>
-            </section><!-- Closing the contact -->
+            </section><!-- Closing the contact section-->
         </main>
 
         <footer class="site-footer">
