@@ -373,6 +373,15 @@ footer {
         gap: 5rem;
         font-size:1.05rem;
     }
+
+    form {
+        display: flex;
+        flex-direction: row;
+      }
+      
+    input {
+        display: block;
+      }
     
     #search {
         width: auto;
